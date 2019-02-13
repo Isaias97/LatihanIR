@@ -5,10 +5,20 @@
  */
 package test;
 
+import model.Document;
+
 /**
  *
  * @author admin
  */
 public class testDocument {
-    
+    public static void main(String[] args) {
+        Document doc1 = new Document(1, "computer information retrieval");
+        // mengeluarkan kata computer information retrieval
+        // dipotong-potong 3 kata
+        String result[] = doc1.getListofTerm();
+        for (int i = 0; i < result.length; i++) {
+            System.out.println("term "+i+" = "+result[i]);
+        }
+    }
 }
