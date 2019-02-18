@@ -35,7 +35,7 @@ public class Document {
     }
     
     public String[] getListofTerm(){
-        String[] split = content.split(getContent());
-        return split;
+        String[] pisah = content.split(" ");
+        return pisah;
     }
 }
